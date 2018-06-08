@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Enable the service
-sysrc -f /etc/rc.conf btsync_enable="YES"
+sysrc -f /etc/rc.conf rslsync_enable="YES"
 
 # Start the service
-service btsync start 2>/dev/null
+service rslsync start 2>/dev/null

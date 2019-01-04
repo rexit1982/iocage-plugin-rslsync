@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x
 
 # Enable the service
 sysrc -f /etc/rc.conf rslsync_enable="YES"

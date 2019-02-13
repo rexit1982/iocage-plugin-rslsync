@@ -1,3 +1,4 @@
 {
-	"adminportal": "http://%%IP%%:8888/"
+	"adminportal": "http://%%IP%%:8888/",
+	"docurl": "https://help.resilio.com/hc/en-us"
 }

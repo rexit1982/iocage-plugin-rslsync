@@ -1,2 +1,2 @@
-# iocage-plugin-btsync
-Artifact file(s) for btsync iocage plugin
+# iocage-plugin-rslsync
+Artifact file(s) for rslsync iocage plugin

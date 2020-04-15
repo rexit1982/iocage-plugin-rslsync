@@ -26,12 +26,12 @@ rcvar="${name}_enable"
 load_rc_config ${name}
 
 : ${rslsync_enable:="NO"}
-: ${rslsync_user:="%%USER%%"}
-: ${rslsync_group:="%%GROUP%%"}
+: ${rslsync_user:="rslsync"}
+: ${rslsync_group:="rslsync"}
 
 pidfile="/var/run/rslsync/rslsync.pid"
-command="%%PREFIX%%/bin/rslsync"
-command_args="--config %%PREFIX%%/etc/rslsync.conf"
+command="/usr/local/bin/rslsync"
+command_args="--config /usr/local/etc/rslsync.conf"
 
 start_precmd=rslsync_prestart
 rslsync_prestart() {

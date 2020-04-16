@@ -47,3 +47,4 @@ echo "Access Web interface to configure http://${IP}:8888"
 echo "Service user and group: rslsync" 
 # Start the service
 service rslsync start 2>/dev/null
+

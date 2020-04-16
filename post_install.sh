@@ -32,6 +32,9 @@ rm rslsync.tar.gz
 rm LICENSE.TXT
 chmod u+x rslsync
 
+#create base config file
+$bindir/rslsync --nodaemon --dump-sample-config > /usr/local/etc/rslsync.conf
+
 echo "Default web port: 8888" >> /root/PLUGIN_INFO
 echo "Service user and group: rslsync" >> /root/PLUGIN_INFO
 

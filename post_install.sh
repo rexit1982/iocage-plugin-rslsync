@@ -18,6 +18,7 @@ sysrc -f /etc/rc.conf rslsync_group="rslsync"
 #create user
 pw user add rslsync -c rslsync -d /nonexistent -s /usr/bin/nologin
 #create directories - set perms
+mkdir -p $bindir
 mkdir -p $piddir
 chown -R rslsync:rslsync $piddir
 mkdir -p $dbdir

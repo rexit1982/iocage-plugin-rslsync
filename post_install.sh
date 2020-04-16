@@ -6,6 +6,7 @@ dlurl="https://download-cdn.resilio.com/${ver}/FreeBSD-x64/resilio-sync_freebsd_
 piddir="/var/run/rslsync"
 dbdir="/var/db/rslsync"
 bindir="/usr/local/bin"
+conf="/usr/local/etc/rslsync.conf"
 
 # Enable the service
 chmod u+x /usr/local/etc/rc.d/rslsync
@@ -18,6 +19,7 @@ sysrc -f /etc/rc.conf rslsync_group="rslsync"
 #create user
 pw user add rslsync -c rslsync -d /nonexistent -s /usr/bin/nologin
 #create directories - set perms
+mkdir -p $bindir
 mkdir -p $piddir
 chown -R rslsync:rslsync $piddir
 mkdir -p $dbdir

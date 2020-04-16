@@ -28,7 +28,7 @@ chown -R rslsync:rslsync $dbdir
 #download and extract the bin
 cd $bindir
 fetch $dlurl -o rslsync.tar.gz
-tar -xvf rslsync.tar.gz
+tar -xf rslsync.tar.gz
 rm rslsync.tar.gz
 rm LICENSE.TXT
 chmod u+x rslsync

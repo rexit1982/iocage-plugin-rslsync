@@ -33,11 +33,6 @@ rm rslsync.tar.gz
 rm LICENSE.TXT
 chmod u+x rslsync
 
-#create base config file and reset permission
-$bindir/rslsync --nodaemon --storage $dbdir --dump-sample-config > $conf
-chown -R rslsync:rslsync $dbdir
-
-
 echo "Default web port: 8888" >> /root/PLUGIN_INFO
 echo "Service user and group: rslsync" >> /root/PLUGIN_INFO
 
